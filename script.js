@@ -1,7 +1,7 @@
 //ПРОВЕРКА СЧАСЛИВОГО БИЛЕТА
 
-butt.onclick = function () {
-  let val = document.getElementById("elem1").value;
+buttBilet.onclick = function () {
+  let val = document.getElementById("userBilet").value;
   document.getElementById("str").innerHTML = "Вы ввели: " + val;
 
   let userInput = val.split("").map(Number);
@@ -58,9 +58,9 @@ butt.onclick = function () {
 
 //ИГРА УГАДАЙ ЧИСЛО
 
-butt.onclick = function () {
+buttRandomNam.onclick = function () {
 
-let userNum = document.getElementById('elem1').value;
+let userNum = document.getElementById('userRandomNam').value;
 document.getElementById('user_namber').innerHTML = 'Ваше число: ' + userNum;
 let  pcnumber = [];
 for (i=0; i<11; i++){
