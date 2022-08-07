@@ -1,0 +1,63 @@
+.calc2 {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 330px;
+  border: #009900 5px solid;
+}
+
+.inputNumber {
+height: 20px;
+margin: 5px;
+border: #000 2px solid;
+font-size: 12px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+/* calc ver1 */
+/* .calc {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 500px;
+  border: #0000ff 3px solid;
+}
+ .btn {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+ }
+
+ .btn button {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.textArea {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+} */
+
+/* end calc ver1 */
+
+/* .css_first_name {
+  border: #00990f 5px solid;
+}
+.css_name_err {
+  border: #ff0404 5px solid;
+}
+
+.css-last_name {
+  border: #00990f 5px solid;
+}
+
+.css_normal {
+  border: #0000ff 5px solid;
+} */
