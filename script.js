@@ -1,3 +1,36 @@
+//ИГРА УГАДАЙ ЧИСЛО
+
+// Игра угадай число на JavaScript
+// В этой игре компьютер загадывает число от 1 до 10.
+//  В инпут на экране игрок вводит число от 1 до 10, пытаясь угадать, что же загадал компьютер.
+
+buttRandomNam.onclick = function () {
+
+let userNum = document.getElementById('userRandomNam').value;
+document.getElementById('user_namber').innerHTML = 'Ваше число: ' + userNum;
+let  pcnumber = [];
+for (i=0; i<11; i++){
+   pcnumber.push(i) //Метод push() добавляет элемент в конец массива
+}
+console.log (pcnumber)
+
+let random = Math.floor(Math.random() * pcnumber.length) //Получить случайный элемент массива 
+console.log(random)
+document.getElementById('computer').innerHTML = 'Компьютер загадал число ' + random
+
+if (+userNum === random){
+  console.log('ok')
+  document.getElementById('result').innerHTML = 'Угадали'
+}
+  else {
+    console.log('no')
+    document.getElementById('result').innerHTML = 'не угадали'
+}
+}
+//КОННЕЦ ИГРА УГАДАЙ ЧИСЛО
+
+
+
 //ПРОВЕРКА СЧАСЛИВОГО БИЛЕТА
 
 buttBilet.onclick = function () {
@@ -42,43 +75,14 @@ buttBilet.onclick = function () {
 
   let res2 = second.reduce((sum, curent) => sum + curent, 0);
   console.log("Сумма вторых трёх чисел массива " + res2);
-  let results
+  let resultBilet
   if (res1 === res2) {
     console.log("true");
-      results = 'Счастливый';
+    resultBilet = 'Счастливый';
   } else {
     console.log("false");
-      results = 'увы, пробуй дальше';
+    resultBilet = 'увы, пробуй дальше';
   }
-  document.getElementById("result").innerHTML = "Ваш билет: " + results;
+  document.getElementById("resultBilet").innerHTML = "Ваш билет: " + resultBilet;
 };
 // КОНЕЦ СЧАСЛИВОГО БИЛЕТА
-
-
-
-//ИГРА УГАДАЙ ЧИСЛО
-
-buttRandomNam.onclick = function () {
-
-let userNum = document.getElementById('userRandomNam').value;
-document.getElementById('user_namber').innerHTML = 'Ваше число: ' + userNum;
-let  pcnumber = [];
-for (i=0; i<11; i++){
-   pcnumber.push(i) //Метод push() добавляет элемент в конец массива
-}
-console.log (pcnumber)
-
-let random = Math.floor(Math.random() * pcnumber.length) //Получить случайный элемент массива 
-console.log(random)
-document.getElementById('computer').innerHTML = 'Компьютер загадал число ' + random
-
-if (+userNum === random){
-  console.log('ok')
-  document.getElementById('result').innerHTML = 'Угадали'
-}
-  else {
-    console.log('no')
-    document.getElementById('result').innerHTML = 'не угадали'
-}
-}
-//КОНЕЦ ИГРА УГАДАЙ ЧИСЛО
